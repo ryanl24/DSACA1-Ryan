@@ -8,6 +8,6 @@ package docklandsbikemanager;
  *
  * @author ryanl
  */
-public class BikeStationManager {
+public class BikeSystemManager {
     
 }

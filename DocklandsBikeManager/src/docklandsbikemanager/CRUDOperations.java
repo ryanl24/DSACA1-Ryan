@@ -10,4 +10,9 @@ package docklandsbikemanager;
  */
 public interface CRUDOperations {
     
+    public void create(Object obj);
+    Object read(String id);
+    public void update(String id, Object updateObj);
+    public void delete(String id);
+    
 }

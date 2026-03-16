@@ -10,4 +10,6 @@ package docklandsbikemanager;
  */
 public interface Displayable {
     
+    String displayDetails();
+    
 }
