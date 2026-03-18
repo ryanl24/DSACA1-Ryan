@@ -15,8 +15,8 @@ public class StackADT implements StackInterface{
     
     private ArrayList<Object> theStack;
 
-    public StackADT(ArrayList<Object> theStack) {
-        this.theStack = theStack;
+    public StackADT() {
+        theStack = new ArrayList<>();
     }
     
     @Override

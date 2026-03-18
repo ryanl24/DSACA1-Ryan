@@ -83,6 +83,18 @@ public class SinglyLinkedList {
         }
     }
     
+    public String displayList(){
+        String output = "";
+        Node aNode = head;
+        
+        while(aNode != null ) {
+            output += aNode.getElement() .toString()+"\n";
+            aNode = aNode.getNext();
+        }
+        
+        return output;
+    }
+    
     
     
 
