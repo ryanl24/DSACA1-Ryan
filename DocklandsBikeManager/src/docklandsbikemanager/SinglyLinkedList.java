@@ -74,6 +74,11 @@ public class SinglyLinkedList {
         
     }
     
+    public Object get(int index){
+        setCurrent(index);
+        return curr.getElement();
+    }
+    
     public void printList(){
         Node aNode = head;
         

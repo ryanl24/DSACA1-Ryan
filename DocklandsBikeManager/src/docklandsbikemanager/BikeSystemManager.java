@@ -22,6 +22,9 @@ public class BikeSystemManager implements CRUDOperations {
         maintenance = new QueueADT();
     }
     
+    public SinglyLinkedList getBikesList(){
+        return bikes;
+    }
     
     //Bikes metods
     
@@ -78,6 +81,7 @@ public class BikeSystemManager implements CRUDOperations {
         return maintenance.displayQueue();
     }
     
+   
     //stack actions
     
     public String viewActions(){

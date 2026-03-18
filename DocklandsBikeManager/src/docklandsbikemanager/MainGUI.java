@@ -44,7 +44,7 @@ public class MainGUI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         stationTA = new javax.swing.JTextArea();
         stationInfoLBL = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        BikeManagmentTAB = new javax.swing.JPanel();
         bikeIdLBL = new javax.swing.JLabel();
         mTypeLBL = new javax.swing.JLabel();
         bLevelLBL = new javax.swing.JLabel();
@@ -61,7 +61,14 @@ public class MainGUI extends javax.swing.JFrame {
         statusTF = new javax.swing.JTextField();
         bikeTypeCB = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        MQueueTAB = new javax.swing.JPanel();
+        bikeLBL = new javax.swing.JLabel();
+        maintenanceBikeTF = new javax.swing.JTextField();
+        sendMaintenanceBTN = new javax.swing.JButton();
+        processMaintenanceBTN = new javax.swing.JButton();
+        viewQueueBTN = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        queueTA = new javax.swing.JTextArea();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -129,7 +136,7 @@ public class MainGUI extends javax.swing.JFrame {
                                 .addComponent(addBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(removeBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
                 .addGroup(TBStationMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(stationInfoLBL))
@@ -209,83 +216,83 @@ public class MainGUI extends javax.swing.JFrame {
 
         jLabel1.setText("Bike Information: ");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout BikeManagmentTABLayout = new javax.swing.GroupLayout(BikeManagmentTAB);
+        BikeManagmentTAB.setLayout(BikeManagmentTABLayout);
+        BikeManagmentTABLayout.setHorizontalGroup(
+            BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BikeManagmentTABLayout.createSequentialGroup()
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BikeManagmentTABLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BikeManagmentTABLayout.createSequentialGroup()
                                     .addComponent(bikeIdLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(54, 54, 54))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BikeManagmentTABLayout.createSequentialGroup()
                                     .addComponent(mTypeLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(25, 25, 25))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BikeManagmentTABLayout.createSequentialGroup()
                                     .addComponent(statusLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(50, 50, 50))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BikeManagmentTABLayout.createSequentialGroup()
                                     .addComponent(bLevelLBL)
                                     .addGap(28, 28, 28)))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGroup(BikeManagmentTABLayout.createSequentialGroup()
                                 .addComponent(BikeTypeLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(batteryLevelTF)
                             .addComponent(modelTypeTF)
                             .addComponent(bikeIdTF)
                             .addComponent(statusTF)
                             .addComponent(bikeTypeCB, 0, 184, Short.MAX_VALUE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(BikeManagmentTABLayout.createSequentialGroup()
                         .addGap(50, 50, 50)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(viewBikesBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGroup(BikeManagmentTABLayout.createSequentialGroup()
                                 .addComponent(addBikeBTN)
                                 .addGap(45, 45, 45)
                                 .addComponent(removeBikeBTN)))))
                 .addGap(89, 89, 89)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addGap(0, 23, Short.MAX_VALUE))
+                .addGap(0, 178, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        BikeManagmentTABLayout.setVerticalGroup(
+            BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BikeManagmentTABLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bikeIdLBL)
                     .addComponent(bikeIdTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(mTypeLBL)
                     .addComponent(modelTypeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(statusLBL)
                     .addComponent(statusTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(batteryLevelTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bLevelLBL))
                 .addGap(24, 24, 24)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BikeTypeLBL)
                     .addComponent(bikeTypeCB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(49, 49, 49)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(BikeManagmentTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(removeBikeBTN)
                     .addComponent(addBikeBTN))
                 .addGap(18, 18, 18)
                 .addComponent(viewBikesBTN)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(31, Short.MAX_VALUE)
+                .addContainerGap(172, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BikeManagmentTABLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -294,26 +301,81 @@ public class MainGUI extends javax.swing.JFrame {
 
         bikeTypeCB.getAccessibleContext().setAccessibleParent(BikeTypeLBL);
 
-        jTabbedPane1.addTab("Bike Managment", jPanel3);
+        jTabbedPane1.addTab("Bike Managment", BikeManagmentTAB);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 921, Short.MAX_VALUE)
+        bikeLBL.setText("Bike Index");
+
+        sendMaintenanceBTN.setText("Send To Maintenance");
+        sendMaintenanceBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sendMaintenanceBTNActionPerformed(evt);
+            }
+        });
+
+        processMaintenanceBTN.setText("Process Next Bike");
+        processMaintenanceBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                processMaintenanceBTNActionPerformed(evt);
+            }
+        });
+
+        viewQueueBTN.setText("View Queue");
+        viewQueueBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewQueueBTNActionPerformed(evt);
+            }
+        });
+
+        queueTA.setColumns(20);
+        queueTA.setRows(5);
+        jScrollPane3.setViewportView(queueTA);
+
+        javax.swing.GroupLayout MQueueTABLayout = new javax.swing.GroupLayout(MQueueTAB);
+        MQueueTAB.setLayout(MQueueTABLayout);
+        MQueueTABLayout.setHorizontalGroup(
+            MQueueTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MQueueTABLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(MQueueTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(viewQueueBTN)
+                    .addComponent(processMaintenanceBTN)
+                    .addComponent(sendMaintenanceBTN)
+                    .addGroup(MQueueTABLayout.createSequentialGroup()
+                        .addComponent(bikeLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(maintenanceBikeTF, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(160, 160, 160))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 522, Short.MAX_VALUE)
+        MQueueTABLayout.setVerticalGroup(
+            MQueueTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MQueueTABLayout.createSequentialGroup()
+                .addGroup(MQueueTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MQueueTABLayout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addGroup(MQueueTABLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(bikeLBL)
+                            .addComponent(maintenanceBikeTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(43, 43, 43)
+                        .addComponent(sendMaintenanceBTN)
+                        .addGap(38, 38, 38)
+                        .addComponent(processMaintenanceBTN)
+                        .addGap(38, 38, 38)
+                        .addComponent(viewQueueBTN))
+                    .addGroup(MQueueTABLayout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab4", jPanel4);
+        jTabbedPane1.addTab("Maintenance Queue", MQueueTAB);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 921, Short.MAX_VALUE)
+            .addGap(0, 1076, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -417,6 +479,28 @@ public class MainGUI extends javax.swing.JFrame {
         bikeIdTF.setText("");
     }//GEN-LAST:event_removeBikeBTNActionPerformed
 
+    private void viewQueueBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewQueueBTNActionPerformed
+        // TODO add your handling code here:
+        queueTA.setText(manager.viewQueue());
+    }//GEN-LAST:event_viewQueueBTNActionPerformed
+
+    private void sendMaintenanceBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendMaintenanceBTNActionPerformed
+        // TODO add your handling code here:
+        int index = Integer.parseInt(maintenanceBikeTF.getText());
+        Bike bike = (Bike) manager.getBikesList().get(index);
+        
+        manager.sendToMaintenance(bike);
+        queueTA.setText(manager.viewQueue());
+        
+        maintenanceBikeTF.setText("");
+    }//GEN-LAST:event_sendMaintenanceBTNActionPerformed
+
+    private void processMaintenanceBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processMaintenanceBTNActionPerformed
+        // TODO add your handling code here:
+        Object processedBike = manager.processMaintenance();
+        queueTA.setText("Processed: " + processedBike + "\n" + manager.viewQueue());
+    }//GEN-LAST:event_processMaintenanceBTNActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -443,7 +527,9 @@ public class MainGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel BikeManagmentTAB;
     private javax.swing.JLabel BikeTypeLBL;
+    private javax.swing.JPanel MQueueTAB;
     private javax.swing.JPanel TBStationM;
     private javax.swing.JButton addBTN;
     private javax.swing.JButton addBikeBTN;
@@ -451,23 +537,27 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JTextField batteryLevelTF;
     private javax.swing.JLabel bikeIdLBL;
     private javax.swing.JTextField bikeIdTF;
+    private javax.swing.JLabel bikeLBL;
     private javax.swing.JTextArea bikeTA;
     private javax.swing.JComboBox<String> bikeTypeCB;
     private javax.swing.JLabel capacityLBL;
     private javax.swing.JTextField capacityTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel locationLBL;
     private javax.swing.JTextField locationTF;
     private javax.swing.JLabel mTypeLBL;
+    private javax.swing.JTextField maintenanceBikeTF;
     private javax.swing.JTextField modelTypeTF;
+    private javax.swing.JButton processMaintenanceBTN;
+    private javax.swing.JTextArea queueTA;
     private javax.swing.JButton removeBTN;
     private javax.swing.JButton removeBikeBTN;
+    private javax.swing.JButton sendMaintenanceBTN;
     private javax.swing.JLabel stationIdLBL;
     private javax.swing.JTextField stationIdTF;
     private javax.swing.JLabel stationInfoLBL;
@@ -478,5 +568,6 @@ public class MainGUI extends javax.swing.JFrame {
     private javax.swing.JTextField statusTF;
     private javax.swing.JButton viewBTN;
     private javax.swing.JButton viewBikesBTN;
+    private javax.swing.JButton viewQueueBTN;
     // End of variables declaration//GEN-END:variables
 }
