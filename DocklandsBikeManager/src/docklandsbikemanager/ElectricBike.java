@@ -11,8 +11,7 @@ package docklandsbikemanager;
 public class ElectricBike extends Bike{
     
     private int batteryLevel;
-
-    public ElectricBike(int batteryLevel, String bikeId, String modelType, String status) {
+    public ElectricBike( String bikeId, String modelType, String status,int batteryLevel) {
         super(bikeId, modelType, status);
         this.batteryLevel = batteryLevel;
     }
@@ -27,7 +26,7 @@ public class ElectricBike extends Bike{
     
     @Override
     public String displayDetails(){
-        return "Electric Bike -" +super.displayDetails()+ ", Battery Level" + batteryLevel + "%";
+        return "Electric Bike -" +super.displayDetails()+ ", Battery Level: " + batteryLevel + "%";
     }
     
 }

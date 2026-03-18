@@ -40,7 +40,7 @@ public class SinglyLinkedList {
             head = newNode;
             
         }else{
-            setCurrent(index);
+            setCurrent(index -1);
             Node newNode = new Node(element, curr.getNext());
             curr.setNext(newNode);
             
