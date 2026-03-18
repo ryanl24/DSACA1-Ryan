@@ -8,15 +8,18 @@ package docklandsbikemanager;
  *
  * @author ryanl
  */
+
+//child class for bike
 public class StandardBike extends Bike{
 
     public StandardBike(String bikeId, String modelType, String status) {
         super(bikeId, modelType, status);
     }
     
+    //display method
     @Override
     public String displayDetails(){
-        return "Standard Bike - " + super.displayDetails();
+        return "Standard Bike -- " + super.displayDetails();
     }
     
 }

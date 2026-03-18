@@ -21,7 +21,7 @@ public class SinglyLinkedList {
         prev = null;
         size = 0;
     }
-    
+    //checks if its empty
     public boolean isEmpty(){
         return size == 0;
     }
@@ -30,25 +30,30 @@ public class SinglyLinkedList {
         return size;
     }
     
+    //adds element at given index
     public void add(int index, Object element){
+        //if adding at head
         if(index == 1){
             Node newNode = new Node(element, head);
             head = newNode;
-            
+            //if list is empty
         }else if(head == null){
             Node newNode = new Node (element);
             head = newNode;
             
         }else{
+            //moves node before adding
             setCurrent(index -1);
+            //creates a new node and link it to the list
             Node newNode = new Node(element, curr.getNext());
             curr.setNext(newNode);
             
         }
         
-        size++;
+        size++;// increases after adding
     }
     
+    //moves curr and prev to corresct position
     private void setCurrent(int index){
         curr = head;
         prev = null;
@@ -59,18 +64,20 @@ public class SinglyLinkedList {
         }
     }
     
+    //removes element at index
     public void remove(int index){
         
         if(index == 1){
             head = head.getNext();
             
         }else{
+            //moves position
             setCurrent(index);
             curr = curr.getNext();
             prev.setNext(curr);
         }
         
-        size --;
+        size --;//decreases after removing
         
     }
     
@@ -79,7 +86,7 @@ public class SinglyLinkedList {
         return curr.getElement();
     }
     
-    public void printList(){
+    public void printList(){//used for testing
         Node aNode = head;
         
         while(aNode != null){
@@ -88,6 +95,7 @@ public class SinglyLinkedList {
         }
     }
     
+    //displays all elements fro GUI
     public String displayList(){
         String output = "";
         Node aNode = head;

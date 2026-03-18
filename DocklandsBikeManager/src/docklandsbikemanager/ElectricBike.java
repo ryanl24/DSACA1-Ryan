@@ -8,6 +8,7 @@ package docklandsbikemanager;
  *
  * @author ryanl
  */
+//child class for bike 
 public class ElectricBike extends Bike{
     
     private int batteryLevel;
@@ -24,9 +25,11 @@ public class ElectricBike extends Bike{
         this.batteryLevel = batteryLevel;
     }
     
+    
+    //adds battery info for the electic bikes
     @Override
     public String displayDetails(){
-        return "Electric Bike -" +super.displayDetails()+ ", Battery Level: " + batteryLevel + "%";
+        return "Electric Bike -- " +super.displayDetails()+ ", Battery Level: " + batteryLevel + "%";
     }
     
 }

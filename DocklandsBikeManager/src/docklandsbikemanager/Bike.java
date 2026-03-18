@@ -8,6 +8,7 @@ package docklandsbikemanager;
  *
  * @author ryanl
  */
+//parent class for all bikes
 public class Bike implements Displayable{
     
     protected String bikeId;
@@ -44,9 +45,10 @@ public class Bike implements Displayable{
         this.status = status;
     }
     
+    //display bikes details
     @Override
     public String displayDetails(){
-        return "Bike ID: " +bikeId+ ",Model: " +modelType+ ", Status: " + status;
+        return "Bike ID: " +bikeId+ ", Model: " +modelType+ ", Status: " + status;
     }
     
     @Override

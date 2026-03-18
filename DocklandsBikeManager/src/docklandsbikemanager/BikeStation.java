@@ -8,6 +8,7 @@ package docklandsbikemanager;
  *
  * @author ryanl
  */
+// for bike station
 public class BikeStation implements Displayable {
     
     private String stationId;
@@ -53,11 +54,11 @@ public class BikeStation implements Displayable {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
-    
+    //displays all the info for each stations details
     
     @Override
     public String displayDetails(){
-        return "Station ID: " +stationId+ ", Name:" +stationName+ ", Location: " +location+ ",Capacity: "+capacity;
+        return "Station ID : " +stationId+ ", Name :" +stationName+ ", Location : " +location+ ",Capacity : "+capacity;
     }
     
     @Override
